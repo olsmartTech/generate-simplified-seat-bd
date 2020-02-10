@@ -30,6 +30,7 @@ public class AccountingCategoriesDAOImpl implements AccountingCategoriesDAO{
 
     @Override
     public String createAccountingCategories(AccountCategories p) {
+        //Metodo para crear categorias de cuentatas
         String rpt = "";
         try { 
             CallableStatement cs = con.prepareCall("{call fn_create_accounter_categories(?,?,?,?,?,?,?,?,?)}");
